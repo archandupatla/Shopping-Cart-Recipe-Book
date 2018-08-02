@@ -1,0 +1,9 @@
+<div class="container"> 
+  <div class="row"> 
+      <app-header (featureSent)="featureSelected($event)"></app-header>
+      <!-- <app-recipes *ngIf="recipeComponent"></app-recipes>
+      <app-shopping-list *ngIf="shoppingComponent"></app-shopping-list> -->
+      <router-outlet></router-outlet>
+  </div>
+</div> 
+ 

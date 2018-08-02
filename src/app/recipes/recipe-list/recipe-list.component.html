@@ -1,0 +1,8 @@
+<div class="row">
+<div class="col-xs-12">
+<button class="btn btn-success" (click)="NavigateNewForm()">New Recipe</button>
+<hr>
+</div>
+</div>
+<app-recipe-item *ngFor = "let recipe of recipe; let i = index" [recipe]="recipe"
+ (recipeDetails)="recipeRecieved(recipe)" [index]="i" ></app-recipe-item>
